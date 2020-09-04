@@ -5,17 +5,27 @@ def has_negatives(a):
     # Your code here
     result = []
     cache = {}
+    temp = []
+    # for num in a:
+    #     if -num in a:
+    #         cache[num] = -num
+    #     print(cache)
+    # # print(cache)
+    # for num in cache:
+    #     if cache[num] > 0:
+    #         result.append(cache[num])
+    # # print(cache)
     for num in a:
-        if -num in a:
+        if num < 0:
             cache[num] = -num
-        print(cache)
-    # print(cache)
     for num in cache:
-        if cache[num] > 0:
+        if cache[num] in a:
             result.append(cache[num])
-    # print(cache)
+    print(cache)
+    # print(result)
+
         
-    # print(cache)
+    # # print(cache)
     return result
 
 
