@@ -30,12 +30,14 @@ def reconstruct_trip(tickets, length):
 
     while len(route) <= length:
         for flight in flightPlan:
-            if flight == "LAX":
+            if flightPlan[next] == "NONE":
+                route.append(flightPlan[next])
+                print(route)
                 return route
             if flight == next:
                 route.append(flightPlan[next])
                 next = flightPlan[flight]
                 # route.append(flightPlan[next])
-                print(route)
+                # print(route)
     
     # return route
