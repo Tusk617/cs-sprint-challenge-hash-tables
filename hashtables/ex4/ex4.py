@@ -9,11 +9,11 @@ def has_negatives(a):
         if -num in a:
             cache[num] = -num
         print(cache)
-    print(cache)
+    # print(cache)
     for num in cache:
         if cache[num] > 0:
             result.append(cache[num])
-    print(cache)
+    # print(cache)
         
     # print(cache)
     return result
