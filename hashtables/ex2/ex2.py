@@ -13,7 +13,9 @@ def reconstruct_trip(tickets, length):
     # for i in tickets:
     #     print(i.source)
     flightPlan = {}
-    route = [0]
+    route = []
+    current = "NONE"
+    next = "NONE"
     # for ticket in tickets:
     #     flightPlan[ticket.destination] = ticket.source
     #     print(flightPlan)
@@ -22,9 +24,18 @@ def reconstruct_trip(tickets, length):
     #     route.append(flight)
     # # print(flightPlan)
     # print(route)
-    for i in tickets:
-        flightPlan[i.source] = i.destination
-         
-    # print(flightPlan)
+    for ticket in tickets:
+        flightPlan[ticket.source] = ticket.destination
+        # print(flightPlan)
 
-    return route
+    while len(route) <= length:
+        for flight in flightPlan:
+            if flight == "LAX":
+                return route
+            if flight == next:
+                route.append(flightPlan[next])
+                next = flightPlan[flight]
+                # route.append(flightPlan[next])
+                print(route)
+    
+    # return route

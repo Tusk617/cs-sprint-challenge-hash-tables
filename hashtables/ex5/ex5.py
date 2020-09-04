@@ -1,5 +1,5 @@
 # Your code here
-
+import re
 
 
 def finder(files, queries):
@@ -7,6 +7,11 @@ def finder(files, queries):
     YOUR CODE HERE
     """
     # Your code here
+    result = []
+    for path in files:
+        path.split("/")
+        print(path)
+    print(files)
 
     return result
 
