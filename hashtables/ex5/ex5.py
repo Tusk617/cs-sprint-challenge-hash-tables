@@ -1,5 +1,5 @@
 # Your code here
-
+import re
 
 
 def finder(files, queries):
@@ -7,6 +7,8 @@ def finder(files, queries):
     YOUR CODE HERE
     """
     # Your code here
+    result = []
+    splitWords = {}
 
     return result
 
