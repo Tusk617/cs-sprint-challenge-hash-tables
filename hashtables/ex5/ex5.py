@@ -8,7 +8,7 @@ def finder(files, queries):
     """
     # Your code here
     result = []
-    
+    splitWords = {}
 
     return result
 
