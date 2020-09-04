@@ -4,7 +4,7 @@ def intersection(arrays):
     """
     # Your code here
     result = []
-
+    print(arrays)
 
     return result
 

@@ -8,10 +8,7 @@ def finder(files, queries):
     """
     # Your code here
     result = []
-    for path in files:
-        path.split("/")
-        print(path)
-    print(files)
+    
 
     return result
 
